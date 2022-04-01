@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 229" width="512" height="229">
+	<title>tesla-logo</title>
+	<defs>
+		<image  width="490" height="56" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeoAAAA4AQMAAAAIIinpAAAAAXNSR0IB2cksfwAAAAZQTFRF////AAAAVcLTfgAAAAJ0Uk5T/wDltzBKAAABWElEQVR4nO3WQa6EIAwA0BoXLDkCR/HfDI/GUTzCLF1Mhm/mU2ixNNrFTyYZNgMOD2uVBoDacs479udjkBMdPCBmbCsIzcRXyp83+c+Au6sc58B0XH+J3PW8mjTgXuVb47X7DlHkfsSnBA8WLz5VoDz0HM2coL4rdsPlNKAcjUtQkx1oWJHy2HM0PkHN1kLCmliCc88xRUuC+rh03Zny+cyLiQdnkzLJA/7jz3wrMR58p5NYSxMZMF5nwGnel38g72rdiOPOAJ0D2QFXuFwq/507E5cr7WUul8r7PNj4Wq4vNo4i2jhW8GzjOwEG/iLvzcBL7oKVCy0JvPx8+SfwtpdGnJdKdlioZyCF81qHn52Vr1b+3jNY+RifFM5L5VPis5Z55J4m8j4Pfbx14DReksUOeZx7jZdX9feFbRIPGkfB1mJ80bhWKtvCQ66VytYfb5m1JV7kjvNf+XN52V9F8yEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="11" y="85"/>
+</svg>

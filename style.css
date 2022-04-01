@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  font-family: myGotham;
+  font-weight: 600;
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: myGotham;
+  src: url(fonts/GothamBook.otf);
+}
+
+.page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: blue;
+  background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/859f1cff-928a-479c-a1e5-f92cfc7d3c69/bvlatuR/std/2880x1800/model-3-main-hero-b-desktop);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+}
+.navbartop {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navitem {
+  /* padding: 20px; */
+  padding: 4px 8px;
+  margin: 0 8px;
+  color: #ffffff;
+  border-radius: 20%;
+  transition: all 1s ease;
+  position: relative;
+  cursor: pointer;
+}
+.navitem:hover {
+  background-color: gray;
+}
+
+.middle {
+  padding: 8px;
+  margin-left: 80px;
+}
+.right {
+  padding-right: 20px;
+}
+
+/*  */
+/*  */
+/*  */
+.maincontent {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.maincontent h1 {
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 40px;
+  margin-top: 5%;
+  transform: translateY(30px);
+  transition: all 1s ease;
+}
+
+.maincontent h1.show {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.box {
+  transform: translateY(-200px);
+  opacity: 0.5;
+}
+.box1 {
+  transition: all 0.5s ease-in-out;
+}
+.box2 {
+  transition: all 1s ease-in-out;
+}
+.box3 {
+  transition: all 2s ease-in-out;
+}
+.box4 {
+  transition: all 2.5s ease-in;
+}
+.box.show {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+/*  */
+/*  */
+
+.sidemenu {
+  position: fixed;
+  top: 35%;
+  bottom: 35%;
+  min-width: 100px;
+}
+.sidemenuitems {
+  list-style: none;
+  padding-left: 2px;
+}
+.sidemenuitem {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  /* cursor: pointer; */
+  border-left: gray 1px solid;
+}
+.sidemenuitem.active {
+  border-left: #fff 2px solid;
+}
+
+#item1.active::after {
+  content: "Model 3 ";
+}
+#item1:hover {
+  border-left: #fff 2px solid;
+}
+#item1:hover::after {
+  content: "Model 3";
+}
+
+#item2:hover::after {
+  content: "SAFETY";
+}
+#item2.active::after {
+  content: "SAFETY";
+}
+#item2:hover {
+  border-left: #fff 2px solid;
+}
+
+#item3:hover::after {
+  content: "PERFORMANCE";
+}
+#item3:hover {
+  border-left: #fff 2px solid;
+}
+#item3.active::after {
+  content: "PERFORMANCE";
+}
+
+#item4:hover::after {
+  content: "ALL WHEEL DRIVE";
+}
+#item4:hover {
+  border-left: #fff 2px solid;
+}
+#item4.active::after {
+  content: "ALL WHEEL DRIVE";
+}
+
+#item5:hover::after {
+  content: "RANGE";
+}
+#item5:hover {
+  border-left: #fff 2px solid;
+}
+#item5.active::after {
+  content: "RANGE";
+}
+
+#item6:hover::after {
+  content: "AUTOPILOT";
+}
+#item6:hover {
+  border-left: #fff 2px solid;
+}
+#item6.active::after {
+  content: "AUTOPILOT";
+}
+
+#item7:hover::after {
+  content: "INTERIOR";
+}
+#item7:hover {
+  border-left: #fff 2px solid;
+}
+#item7.active::after {
+  content: "INTERIOR";
+}
+
+#item8:hover::after {
+  content: "SPECS";
+}
+#item8:hover {
+  border-left: #fff 2px solid;
+}
+#item8.active::after {
+  content: "SPECS";
+}
+
+#item9:hover::after {
+  content: "ORDER";
+}
+#item9:hover {
+  border-left: #fff 2px solid;
+}
+#item9.active::after {
+  content: "ORDER";
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box h3 {
+  font-size: 28px;
+}
+.info {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box {
+  padding: 2%;
+}
+.speed-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+}
+.speed-container img {
+  position: absolute;
+  display: inline;
+  font-size: 14px;
+}
+#svg1 {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#svg2 {
+  opacity: 0.2;
+  left: 8%;
+  right: 0;
+  top: 15%;
+  bottom: 50%;
+}
+#svg3 {
+  top: 15%;
+  left: 26%;
+  bottom: 0;
+}
+#ordernow {
+  background: none;
+  border-radius: 25px;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  padding: 10px 60px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+#ordernow:hover {
+  background-color: #fff;
+  color: black;
+}
+@media (max-width: 1200px) {
+  .middle {
+    display: none;
+  }
+}
