@@ -1,5 +1,6 @@
 const items = document.querySelectorAll("#Model3");
 const items2 = document.querySelectorAll(".box");
+const items3 = document.querySelectorAll("#svg3");
 console.log(items);
 console.log(items2);
 const isInViewport = (el) => {
@@ -17,6 +18,10 @@ const run = () =>
   items.forEach((item) => {
     item.classList.add("show");
   });
+const run3 = () =>
+  items3.forEach((item) => {
+    item.classList.add("show");
+  });
 const run2 = () =>
   items2.forEach((item) => {
     if (isInViewport(item)) {
@@ -29,6 +34,7 @@ window.addEventListener("load", run);
 window.addEventListener("resize", run);
 window.addEventListener("scroll", run);
 window.addEventListener("load", run2);
+window.addEventListener("load", run3);
 window.addEventListener("resize", run2);
 window.addEventListener("scroll", run2);
 

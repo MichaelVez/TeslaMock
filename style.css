@@ -291,6 +291,16 @@ html {
   background-color: #fff;
   color: black;
 }
+
+#svg3 {
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  transition: all 1s ease-in-out;
+}
+#svg3.show {
+  transform: rotate(90deg);
+}
+
 @media (max-width: 1200px) {
   .middle {
     display: none;
