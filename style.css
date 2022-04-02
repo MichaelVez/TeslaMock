@@ -549,12 +549,15 @@ html {
 .p3box {
   position: relative;
 }
-.p3box2 {
-}
-.p3box3 {
-}
 .page3 .speed-container {
   position: absolute;
   left: -55%;
   top: 20%;
+}
+#arrow2 {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  right: 50%;
+  transform: rotate(0deg);
 }
