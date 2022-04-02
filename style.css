@@ -114,6 +114,7 @@ html {
 
 .sidemenu {
   position: fixed;
+  z-index: 6;
   top: 35%;
   bottom: 35%;
   min-width: 100px;
@@ -151,6 +152,7 @@ html {
 }
 #item2.active::after {
   content: "SAFETY";
+  color: black;
 }
 #item2:hover {
   border-left: #fff 2px solid;
@@ -305,4 +307,254 @@ html {
   .middle {
     display: none;
   }
+
+  .page2 {
+    flex-direction: column;
+  }
+  .page2 span:first-child {
+    text-align: center;
+  }
+  .page2 h3 {
+    font-size: 0.5rem;
+  }
+  .page2 h1 {
+    font-size: 1rem;
+  }
+
+  .page2 p,
+  .page2 span,
+  .page2 a {
+    font-size: 0.6rem;
+    width: 50vw;
+  }
+  .page2 .twobtns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+  }
+  .page2 .twobtns #ordernow {
+    font-size: 0.5rem;
+    border-width: 0.2rem;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+  .page2 .twobtns #learnmore {
+    padding: 0.3rem;
+    border-width: 0.2rem;
+  }
+  .page2 .carpicture {
+    width: 100vw;
+  }
+  .page2 .safety {
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .page3 .cont {
+    justify-content: center;
+  }
+  .leftinfo h4 {
+    font-size: 16px;
+    transform: translateY(90%);
+  }
+  .leftinfo h1 {
+    font-size: 20px;
+  }
+  .rightinfo {
+    width: 70vw;
+  }
+}
+.page2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* align-items: center; */
+}
+.page1 .arrow {
+  z-index: 10;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(163deg)
+    brightness(106%) contrast(100%);
+  /* right: 50%; */
+}
+.page2 .arrow {
+  z-index: 10;
+  height: 30px;
+  width: 30px;
+  top: 0%;
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0%;
+}
+.carpicture {
+  background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  width: 80vw;
+  height: 100vh;
+}
+.safety {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.safety h3 {
+  padding-top: 30px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 10px;
+}
+.safety h1 {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.safety a {
+  font-weight: 400;
+}
+.safety a:visited {
+  color: black;
+}
+.safety span {
+  font-weight: 600;
+}
+.safety p {
+  font-weight: 400;
+  padding-right: 8%;
+}
+.twobtns {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  right: 0%;
+  cursor: pointer;
+}
+.twobtns #ordernow {
+  background: none;
+  border-radius: 25px;
+  border: 0.3rem solid black;
+  color: black;
+  padding: 10px 60px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.twobtns #ordernow:hover {
+  background-color: black;
+  color: white;
+}
+.twobtns #learnmore {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  border-color: black;
+  border-width: 0.25rem;
+  background-color: white;
+  padding: 4%;
+  cursor: pointer;
+}
+.twobtns #learnmore:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+.page3 {
+  color: white;
+  text-align: center;
+}
+.page3 .carinfo {
+  background: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 70vh;
+}
+.page3 .morecarinfo {
+  display: flex;
+  width: 100vw;
+  height: 30vh;
+  justify-content: center;
+  color: black;
+}
+.containerr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page3 {
+  font-size: 14px;
+}
+.page3 .leftinfo {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.page3 .rightinfo {
+  width: 35vw;
+}
+.page3 h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.page3 p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+}
+.page3 #learnmore {
+  border-radius: 50%;
+  font-size: 1rem;
+  border-color: black;
+  border-width: 0.15rem;
+  background-color: white;
+  padding: 2%;
+  cursor: pointer;
+}
+.page3 #learnmore:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+.page3 #ordernow {
+  color: black;
+  border-color: black;
+}
+.page3 #ordernow:hover {
+  color: white;
+  background-color: black;
+}
+.page3 h3 {
+  line-height: 0%;
+}
+.cont {
+  display: flex;
+  height: 70vh;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-bottom: 3%;
+}
+.p3box {
+  position: relative;
+}
+.p3box2 {
+}
+.p3box3 {
+}
+.page3 .speed-container {
+  position: absolute;
+  left: -55%;
+  top: 20%;
 }
